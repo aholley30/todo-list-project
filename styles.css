@@ -1,0 +1,87 @@
+html {
+  min-width: 500px;
+}
+
+body {
+  margin: 0;
+  background: #1b1b32;
+  letter-spacing: 0.2px;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+}
+
+
+.title {
+  text-align: center;
+  margin: 1em auto;
+  padding: 0;
+}
+
+.list {
+  text-align: left;
+  background-color:  #0a0a23;
+  color: white;
+  margin: 0 10% 5% 10%;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 0;
+  
+  /*height: 50em;*/
+}
+
+label {
+  display: block;
+  padding: 1em;
+}
+
+
+
+input[type="checkbox"] {
+  appearance: none;
+
+  background-color: white;
+  font: inherit;
+  color: white;
+  margin: 1em 1em 1em 2em;
+  text-align: center;
+  width: 0.5em;
+  height: 0.5em;
+  border: 0.5em solid white;
+  border-radius: 50% 50% 50% 50%;
+  transform: translateY(-0.075em);
+  vertical-align: middle;
+
+  /* display: grid; */
+  place-content: center;
+}
+
+input[type="checkbox"]:checked{
+  content: "";
+  transform: scale(1);
+  width: 0.5em;
+  height: 0.5em;
+  border: 0.5em solid white;
+  border-radius: 0.15em;
+  transition: 10ms transform ease-in-out;
+  transform-origin: bottom;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+
+  /* box-shadow: inset 1em 1em var(--form-control-color); */
+}
+
+label input:checked~.strike{
+  text-decoration: line-through white !important;
+}
+
+.right {
+  float: right;
+  display: block;
+  padding: 1em;
+  
+}

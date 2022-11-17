@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Daily Todos</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" type="icon" href="./check-mark.ico">
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $('checkbox').change(function() {
+          console.log("working");
+          if ($('checkbox').prop('checked') ) {
+            console.log("checked");
+            
+          }
+        });
+    </script>
+    <header class = "header">
+      <h1>Your Daily Todos</h1>
+    </header>
+    <div>
+      <h2 class="title">0 Items Remaining - Nice Job!</h2>
+    </div>
+    <div class="list">
+      <form>
+        
+        <label for="v1">
+          <input type="checkbox" id="v1" value="v1" class="inline"/>
+          <span class="strike">Item 1</span>
+          <span class="right fas fa-fire">  6 day streak</span>
+        </label>
+        <label for="v2">
+          <input type="checkbox" id="v2" value="v2" class="inline"/>
+          <span class="strike">Item 2</span>
+        </label>
+        <label for="v3">
+          <input type="checkbox" id="v3" value="v3" class="inline"/>
+          <span class="strike">Item 3</span>
+        </label>
+        <label for="v4">
+          <input type="checkbox" id="v4" value="v4" class="inline"/>
+          <span class="strike">Item 4</span>
+        </label>
+
+      </form>
+    </div>
+    <script src="" async defer></script>
+  </body>
+</html>
