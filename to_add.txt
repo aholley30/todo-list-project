@@ -1,0 +1,7 @@
+More things I should add:
+
+- streak tracking
+- a login so people can save their list
+- a database to save the login info
+- sort of calendar that'll track daily progress
+- have the calendar also be able to show todos done that day
