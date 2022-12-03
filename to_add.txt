@@ -5,3 +5,5 @@ More things I should add:
 - a database to save the login info
 - sort of calendar that'll track daily progress
 - have the calendar also be able to show todos done that day
+- choice to randomly select what to do to work on
+- allow preference for different task lengths for the random select
