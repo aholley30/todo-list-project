@@ -112,7 +112,7 @@ label input:checked~.strike{
   text-align: center;
 }
 
-#todo_list:first-child .col-6 {
+#todo_list:first-child .col-6, #todo_list:first-child .col-10 {
   border: 0.15em solid inherit;
   border-top-left-radius: 0.5em;
 }
@@ -122,12 +122,12 @@ label input:checked~.strike{
   border-bottom-right-radius: 0.5em;
 }
 
-#todo_list:last-child .col-6 {
+#todo_list:last-child .col-6, #todo_list:last-child .col-10 {
   border: 0.15em solid inherit;
   border-bottom-left-radius: 0.5em;
 }
 
-.col-4, .col-6, .col-2, .col-10 {
+.col-4, .col-6, .col-2, .col-10, .hidden {
   padding: 1em;
   /* padding-bottom: 0; */
   background-color:  #0a0a23;
