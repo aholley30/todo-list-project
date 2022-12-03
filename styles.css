@@ -96,63 +96,74 @@ label input:checked~.strike{
 }
 
 #centerme {
-  text-align: left;
+  /* text-align: left; */
   /* background-color:  #0a0a23; */
   color: white;
   /* margin: auto; */
 
   font-size: x-large;
   font-weight: bold;
+  margin: auto;
   /* padding: 0; */
   
 }
-#todo_list:first-child .first{
-  border: 0.15em solid inherit;
-  border-top-right-radius: 0.5em;
-  text-align: center;
+
+#centerme .row {
+  margin: auto;
 }
 
-#todo_list:first-child .col-6, #todo_list:first-child .col-10 {
-  border: 0.15em solid inherit;
-  border-top-left-radius: 0.5em;
-}
-
-#todo_list:last-child .col-sm-3 {
-  border: 0.15em solid inherit;
-  border-bottom-right-radius: 0.5em;
-}
-
-#todo_list:last-child .col-6, #todo_list:last-child .col-10 {
-  border: 0.15em solid inherit;
-  border-bottom-left-radius: 0.5em;
-}
-
-.col-4, .col-6, .col-2, .col-10, .hidden {
+#itemdiv,#dropdiv,#streakdiv {
   padding: 1em;
   /* padding-bottom: 0; */
   background-color:  #0a0a23;
   margin: 0;
 }
 
-.col-4:last-child, .col-6:last-child {
-  /* padding-bottom: 1em; */
-  background-color:  #0a0a23;
+@media (min-width: 576px) {
+  #todo_list:first-child #itemdiv {
+    border: 0.15em solid inherit;
+    border-top-left-radius: 0.5em;
+  }
+  #todo_list:last-child #itemdiv {
+    border: 0.15em solid inherit;
+    border-bottom-left-radius: 0.5em;
+  }
+  #todo_list:first-child #streakdiv {
+    border: 0.15em solid inherit;
+    border-top-right-radius: 0.5em;
+  }
+  #todo_list:last-child #streakdiv {
+    border: 0.15em solid inherit;
+    border-bottom-right-radius: 0.5em;
+  }
 }
 
-.col-4 {
-  float: right;
-  text-align: center;
-  /* padding-right: 1.5em; */
-  background-color:  #0a0a23;
+@media (max-width: 576px) {
+  #todo_list:first-child #itemdiv {
+    border: 0.15em solid inherit;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+  #todo_list:last-child #dropdiv {
+    border: 0.15em solid inherit;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+  }
+  #centerme {
+    margin: auto;
+    padding: auto;
+  }
+  #centerme .row {
+    margin: auto;
+    padding: auto;
+  }
+
 }
 
+
+/* Indent lines */
 .item_label {
   display: flex;
   flex-direction: row;
 }
 
-.time_select {
-  float: center;
-  text-align-last: center;
-  text-align: center;
-}
