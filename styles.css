@@ -109,6 +109,7 @@ label input:checked~.strike{
 #todo_list:first-child .first{
   border: 0.15em solid inherit;
   border-top-right-radius: 0.5em;
+  text-align: center;
 }
 
 #todo_list:first-child .col-6 {
@@ -116,7 +117,7 @@ label input:checked~.strike{
   border-top-left-radius: 0.5em;
 }
 
-#todo_list:last-child .col-4 {
+#todo_list:last-child .col-sm-3 {
   border: 0.15em solid inherit;
   border-bottom-right-radius: 0.5em;
 }
@@ -126,7 +127,7 @@ label input:checked~.strike{
   border-bottom-left-radius: 0.5em;
 }
 
-.col-4, .col-6, .col-2 {
+.col-4, .col-6, .col-2, .col-10 {
   padding: 1em;
   /* padding-bottom: 0; */
   background-color:  #0a0a23;

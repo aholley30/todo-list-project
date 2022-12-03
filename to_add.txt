@@ -7,3 +7,4 @@ More things I should add:
 - have the calendar also be able to show todos done that day
 - choice to randomly select what to do to work on
 - allow preference for different task lengths for the random select
+* hide dropdown and streak on mobile
