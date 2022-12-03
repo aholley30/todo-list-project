@@ -17,12 +17,10 @@ body, .container-fluid {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  /* padding: 32px; */
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   font-family: cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border: 0.15em solid inherit;
-
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
@@ -30,27 +28,11 @@ body, .container-fluid {
 
 .title {
   text-align: center;
-  /* margin: 1em auto; */
   margin-top: 1em;
   margin-bottom: 1em;
   padding: 0;
   color:black;
 }
-
-/* .list {
-  text-align: left;
-  background-color:  #0a0a23;
-  color: white;
-  margin: 0% 10% 5% 10%;
-  font-size: x-large;
-  font-weight: bold;} */
-
-
-/* label {
-  display: inline;
-} */
-
-
 
 input[type="checkbox"] {
   appearance: none;
@@ -96,16 +78,10 @@ label input:checked~.strike{
 }
 
 #centerme {
-  /* text-align: left; */
-  /* background-color:  #0a0a23; */
   color: white;
-  /* margin: auto; */
-
   font-size: x-large;
   font-weight: bold;
   margin: auto;
-  /* padding: 0; */
-  
 }
 
 #centerme .row {
@@ -167,3 +143,6 @@ label input:checked~.strike{
   flex-direction: row;
 }
 
+#streakdiv {
+  text-align: center;
+}
