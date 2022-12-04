@@ -20,7 +20,7 @@ body, .container-fluid {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   font-family: cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border: 0.15em solid inherit;
+  border: 0.15em solid #0a0a23;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
@@ -97,41 +97,39 @@ label input:checked~.strike{
 
 @media (min-width: 576px) {
   #todo_list:first-child #itemdiv {
-    border: 0.15em solid inherit;
+    border: 0.15em solid #0a0a23;
     border-top-left-radius: 0.5em;
   }
   #todo_list:last-child #itemdiv {
-    border: 0.15em solid inherit;
+    border: 0.15em solid #0a0a23;
     border-bottom-left-radius: 0.5em;
   }
   #todo_list:first-child #streakdiv {
-    border: 0.15em solid inherit;
+    border: 0.15em solid #0a0a23;
     border-top-right-radius: 0.5em;
   }
   #todo_list:last-child #streakdiv {
-    border: 0.15em solid inherit;
+    border: 0.15em solid #0a0a23;
     border-bottom-right-radius: 0.5em;
   }
 }
 
 @media (max-width: 576px) {
   #todo_list:first-child #itemdiv {
-    border: 0.15em solid inherit;
+    border: 0.15em solid #0a0a23;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
   }
   #todo_list:last-child #dropdiv {
-    border: 0.15em solid inherit;
+    border: 0.15em solid #0a0a23;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
   }
   #centerme {
     margin: auto;
-    padding: auto;
   }
   #centerme .row {
     margin: auto;
-    padding: auto;
   }
 
 }
