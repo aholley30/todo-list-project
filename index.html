@@ -33,15 +33,15 @@
     </div>
     
     <div class="row" id="centerme">
-      <div class="row" id="todo_list">
+      <div class="row todo_list" id="default_item">
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
-          <label for="v1" class="item_label">
-            <input type="checkbox" id="v1" value="v1" class="inline" />
+          <label class="item_label">
+            <input type="checkbox" class="inline" />
             <span class="strike">Track number of items remaining</span>
           </label>
         </div>
-        <div class="col-sm-2" id="dropdiv">
+        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
           <select name="time_req" class="form-select" placeholder="Length">
             <optgroup label="Time Commitment">
               <option value="" disabled selected></option>
@@ -56,7 +56,7 @@
         </div>
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row" id="todo_list">
+      <div class="row todo_list">
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v2" class="item_label">
@@ -64,7 +64,7 @@
             <span class="strike">Indent overflow text</span>
           </label>
         </div>
-        <div class="col-sm-2" id="dropdiv" >
+        <div class="d-none d-sm-block col-sm-2" id="dropdiv" >
           <select name="time_req" class="form-select" placeholder="Length">
             <optgroup label="Time Commitment">
               <option value="" disabled selected></option>
@@ -74,18 +74,18 @@
             </optgroup>
           </select>
         </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="strike"> </span></div>
+        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row" id="todo_list">
+      <div class="row todo_list">
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v3" class="item_label">
-            <input type="checkbox" id="v3" value="v3" class="inline" checked />
-            <span class="strike">Remove white bar</span>
+            <input type="checkbox" id="v3" value="v3" class="inline" />
+            <span class="strike">Update for, id, and value for newly added items</span>
           </label>
         </div>
-        <div class="col-sm-2" id="dropdiv">
+        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
           <select name="time_req" class="form-select" placeholder="Length">
             <optgroup label="Time Commitment">
               <option value="" disabled selected></option>
@@ -95,10 +95,10 @@
             </optgroup>
           </select>
         </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="strike"> </span></div>
+        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row" id="todo_list">
+      <div class="row todo_list">
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v4" class="item_label">
@@ -106,7 +106,7 @@
             <span class="strike">Be able to edit todos</span>
           </label>
         </div>
-        <div class="col-sm-2" id="dropdiv">
+        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
           <select name="time_req" class="form-select" placeholder="Length">
             <optgroup label="Time Commitment">
               <option value="" disabled selected></option>
@@ -116,18 +116,18 @@
             </optgroup>
           </select>
         </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="strike"> </span></div>
+        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row" id="todo_list">
+      <div class="row todo_list">
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v5" class="item_label">
-            <input type="checkbox" id="v5" value="v5" class="inline" />
-            <span class="strike">Be able to add and remove todos</span>
+            <input type="checkbox" id="v5" value="v5" class="inline" checked/>
+            <span class="strike">Be able to add todos</span>
           </label>
         </div>
-        <div class="col-sm-2" id="dropdiv">
+        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
           <select name="time_req" class="form-select" placeholder="Length">
             <optgroup label="Time Commitment">
               <option value="" disabled selected></option>
@@ -137,18 +137,18 @@
             </optgroup>
           </select>
         </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="strike"> </span></div>
+        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row" id="todo_list">
+      <div class="row todo_list">
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v6" class="item_label">
             <input type="checkbox" id="v6" value="v6" class="inline" />
-            <span class="strike">Add a 3 bar drop down menu</span>
+            <span class="strike">Be able to remove todos</span>
           </label>
         </div>
-        <div class="col-sm-2" id="dropdiv">
+        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
           <select name="time_req" class="form-select" placeholder="Length">
             <optgroup label="Time Commitment">
               <option value="" disabled selected></option>
@@ -158,7 +158,18 @@
             </optgroup>
           </select>
         </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="strike"> </span></div>
+        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
+        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+      </div>
+      <div class="row ta todo_list">
+        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-large-block col-sm-10" id="itemdiv">
+          <label for="v6" class="item_label"></label>
+            <input type="checkbox" id="v6" value="v6" class="inline" />
+            <textarea type="text" id="add_item" class="form-control-md" rows="1" placeholder="Add more items..."></textarea>
+          </label>
+        </div>
+
         <div class= "d-none d-sm-block col-1" id="lildiv"></div>
       </div>
     </div>
@@ -169,8 +180,40 @@
         </div>
       </div>
     </div>
+    <script>
+
+      function enterPressed() {
+        let p = document.getElementById("default_item"); //Gets the first todo item
+        let j = p.cloneNode(true); //makes a deep copy
+        const content = document.getElementById('add_item').value; //Grab the content entered into input field
+        document.getElementById('add_item').value = ''; //Clear input field
+        j.querySelector('.strike').innerText = content; //Set the content of the todo otem
+        j.querySelector('.right').innerText = ''; //Get rid of the streak text
+        j.querySelector('.right').className = 'right'; //Get rid of fire icon
+        document.getElementById('centerme').appendChild(j); //append whole node to the bottom of the list
+        p = document.getElementsByClassName('ta')[0]; //Grab the list item asking for input
+        document.getElementById('centerme').appendChild(p); //Move the input list item back to the
+      }
+
+      // Get the input field
+      var input = document.getElementById("add_item");
+
+      // Execute a function when the user presses a key on the keyboard
+      input.addEventListener("keypress", function(event) {
+        // If the user presses the "Enter" key on the keyboard
+        // console.log(event.key)
+        if (event.key === "Enter") {
+          event.preventDefault();
+          enterPressed();
+          console.log('Enter pressed');
+        }
+      }); 
+
+      
+
+    </script>
   </div>
-  <script src="" async defer></script>
+  
 </body>
 
 </html>

@@ -96,31 +96,31 @@ label input:checked~.strike{
 }
 
 @media (min-width: 576px) {
-  #todo_list:first-child #itemdiv {
+  .todo_list:first-child #itemdiv {
     border: 0.15em solid #0a0a23;
     border-top-left-radius: 0.5em;
   }
-  #todo_list:last-child #itemdiv {
+  .todo_list:last-child #itemdiv {
     border: 0.15em solid #0a0a23;
     border-bottom-left-radius: 0.5em;
   }
-  #todo_list:first-child #streakdiv {
+  .todo_list:first-child #streakdiv {
     border: 0.15em solid #0a0a23;
     border-top-right-radius: 0.5em;
   }
-  #todo_list:last-child #streakdiv {
+  .todo_list:last-child #itemdiv {
     border: 0.15em solid #0a0a23;
     border-bottom-right-radius: 0.5em;
   }
 }
 
 @media (max-width: 576px) {
-  #todo_list:first-child #itemdiv {
+  .todo_list:first-child #itemdiv {
     border: 0.15em solid #0a0a23;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
   }
-  #todo_list:last-child #dropdiv {
+  .todo_list:last-child #itemdiv {
     border: 0.15em solid #0a0a23;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
@@ -130,6 +130,10 @@ label input:checked~.strike{
   }
   #centerme .row {
     margin: auto;
+  }
+
+  textarea{
+    max-width: 75%;
   }
 
 }
@@ -143,4 +147,10 @@ label input:checked~.strike{
 
 #streakdiv {
   text-align: center;
+}
+
+textarea {
+  background-color: #0a0a23;
+  color: white;
+  transform: translateY(-0.2em);
 }
