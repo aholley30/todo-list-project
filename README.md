@@ -2,4 +2,4 @@
 
 Mobile accessible website I'm making to practice web development. I'm applying new concepts as I learn them.
 
-Demo active <a href="https://holley-todo-project.neocities.org/" target="_blank">here</a> updated 12/18
+Demo site active <a href="https://holley-todo-project.neocities.org/" target="_blank">here</a> updated 12/18
