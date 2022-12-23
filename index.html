@@ -35,7 +35,7 @@
             <div class="dropdown-content">
               <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./2_picksomething.html">Pick for Me</a></li>
+                <li><a href="./2_picksomething.html">Decision Maker</a></li>
               </ul>
             </div>
           </button>
@@ -45,10 +45,10 @@
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
               <a href="./index.html">Home</a>
-              <a href="./2_picksomething.html">Pick for Me</a>
+              <a href="./2_picksomething.html">Decision Maker</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="menuFunc()">
               <i class="fa fa-bars"></i>
             </a>
           </div>
@@ -242,7 +242,7 @@
       }); 
 
       /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-      function myFunction() {
+      function menuFunc() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "block") {
           x.style.display = "none";
