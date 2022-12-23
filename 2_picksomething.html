@@ -3,18 +3,19 @@
 <html>
 
 <head>
+  <meta name="revised" content="December 23rd, 2022, 1:00 am" /> 
+  <meta name="HandheldFriendly" content="true"/>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="website, productivity, todo list">
   <meta name="author" content="Alessandria Holley">
   <meta name="publisher" content="Alessandria Holley">
   <meta name="description" content="A website that's main feature is the to do list.">
   <meta name="page-topic" content="Productivity">
   <meta name="page-type" content="List">
-  <meta name="audience" content="Everyone">
+  <meta name="language" content="english">
   <title>Productivity Tracker</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles2.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -34,21 +35,21 @@
       <div class="dropdown col-12 col-lg-12">
         <button class="dropbtn">Menu
           <i class="fa fa-caret-down"></i>
-          <div class="dropdown-content">
+          <nav class="dropdown-content">
             <ul>
               <li><a href="./index.html">Home</a></li>
               <li><a href="./2_picksomething.html">Decision Maker</a></li>
             </ul>
-          </div>
+          </nav>
         </button>
       </div>
       <div class="topnav">
         <header><a href="#home" class="active">Too Many Choices?</a></header>
         <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
+        <nav id="myLinks">
           <a href="./index.html">Home</a>
           <a href="./2_picksomething.html">Decision Maker</a>
-        </div>
+        </nav>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="menuFunc()">
           <i class="fa fa-bars"></i>
@@ -89,34 +90,28 @@
       } else {
         x.style.display = "block";
       }
-    } 
+    }
 
+    // Get random number between 0 and content_length
     function getRandNumber(content_length) {
       return Math.floor(Math.random() * content_length);
     }
 
-    // For the sort function
-    function compareObjects(obj1, obj2, key) {
-      if (obj1[key] > obj2[key]) {
-        return -1;
-      }
-      return 1;
-    }
 
     function saveResults(res_dict, num_runs) {
       const results = document.getElementById('actual_results');
       results.innerHTML = '';
       var newEl;
       // Create items array
-      var items = Object.keys(res_dict).map(function(key) {
+      var items = Object.keys(res_dict).map(function (key) {
         return [key, res_dict[key]];
       });
       console.log(items);
       // Sort the array based on the second element
-      items.sort(function(first, second) {
+      items.sort(function (first, second) {
         return second[1] - first[1];
       });
-      
+
       for (let i = 0; i < items.length; i++) {
         newEl = document.createElement('p');
         newEl.innerText = items[i][0] + ': ' + ((items[i][1] / num_runs) * 100).toFixed(2) + '%';
@@ -137,7 +132,7 @@
       content = content.map((item) => item.trim());
       //pick a random index
       var index = getRandNumber(content.length)
-      
+
       const newEl = document.createElement('p');
       // newEl.style.margin = '1em 0';
       // newEl.style.textAlign = 'center';

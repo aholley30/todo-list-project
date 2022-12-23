@@ -3,18 +3,19 @@
 <html>
 
 <head>
+  <meta name="revised" content="December 23rd, 2022, 1:00 am" /> 
+  <meta name="HandheldFriendly" content="true"/>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="website, productivity, todo list">
   <meta name="author" content="Alessandria Holley">
   <meta name="publisher" content="Alessandria Holley">
   <meta name="description" content="A website that's main feature is the to do list.">
   <meta name="page-topic" content="Productivity">
   <meta name="page-type" content="List">
-  <meta name="audience" content="Everyone">
+  <meta name="language" content="english">
   <title>Productivity Tracker</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -32,29 +33,29 @@
         <div class="dropdown">
           <button class="dropbtn">Menu
             <i class="fa fa-caret-down"></i>
-            <div class="dropdown-content">
+            <nav class="dropdown-content">
               <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./2_picksomething.html">Decision Maker</a></li>
               </ul>
-            </div>
+            </nav>
           </button>
         </div>
-          <div class="topnav">
-            <header><a href="#home" class="active">ToDO List</a></header>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-              <a href="./index.html">Home</a>
-              <a href="./2_picksomething.html">Decision Maker</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="menuFunc()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
+        <div class="topnav">
+          <header><a href="#home" class="active">ToDO List</a></header>
+          <!-- Navigation links (hidden by default) -->
+          <nav id="myLinks">
+            <a href="./index.html">Home</a>
+            <a href="./2_picksomething.html">Decision Maker</a>
+          </nav>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="menuFunc()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-      
-      
+      </div>
+
+
     </div>
     <div class="row">
       <div class="col-12 col-lg-12" id="title">
@@ -63,7 +64,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="row" id="centerme">
       <div class="row todo_list" id="default_item">
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
@@ -86,17 +87,17 @@
         <div class="d-none d-sm-block col-sm-3" id="streakdiv">
           <span class="right fas fa-fire"> 6 day streak</span>
         </div>
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
       <div class="row todo_list">
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v2" class="item_label">
             <input type="checkbox" id="v2" value="v2" class="inline" checked />
             <span class="strike">Indent overflow text</span>
           </label>
         </div>
-        <div class="d-none d-sm-block col-sm-2" id="dropdiv" >
+        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
           <select name="time_req" class="form-select" placeholder="Length">
             <optgroup label="Time Commitment">
               <option value="" disabled selected></option>
@@ -107,10 +108,10 @@
           </select>
         </div>
         <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
       <div class="row todo_list">
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v3" class="item_label">
             <input type="checkbox" id="v3" value="v3" class="inline" />
@@ -128,10 +129,10 @@
           </select>
         </div>
         <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
       <div class="row todo_list">
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v4" class="item_label">
             <input type="checkbox" id="v4" value="v4" class="inline" />
@@ -149,13 +150,13 @@
           </select>
         </div>
         <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
       <div class="row todo_list">
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v5" class="item_label">
-            <input type="checkbox" id="v5" value="v5" class="inline" checked/>
+            <input type="checkbox" id="v5" value="v5" class="inline" checked />
             <span class="strike">Be able to add todos</span>
           </label>
         </div>
@@ -170,10 +171,10 @@
           </select>
         </div>
         <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
       <div class="row todo_list">
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v6" class="item_label">
             <input type="checkbox" id="v6" value="v6" class="inline" />
@@ -191,24 +192,25 @@
           </select>
         </div>
         <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
       <div class="row ta todo_list">
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-10" id="itemdiv">
           <label for="v6" class="item_label"></label>
-            <input type="checkbox" id="v6" value="v6" class="inline" />
-            <textarea type="text" id="add_item" class="form-control-md" rows="1" placeholder="Add more items..."></textarea>
+          <input type="checkbox" id="v6" value="v6" class="inline" />
+          <textarea type="text" id="add_item" class="form-control-md" rows="1"
+            placeholder="Add more items..."></textarea>
           </label>
         </div>
 
-        <div class= "d-none d-sm-block col-1" id="lildiv"></div>
+        <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
     </div>
     <div class="row">
       <div class="col-12 col-lg-12" id="blank_space">
         <div>
-          <h2 class="title">  </h2>
+          <h2 class="title"> </h2>
         </div>
       </div>
     </div>
@@ -231,7 +233,7 @@
       var input = document.getElementById("add_item");
 
       // Execute a function when the user presses a key on the keyboard
-      input.addEventListener("keypress", function(event) {
+      input.addEventListener("keypress", function (event) {
         // If the user presses the "Enter" key on the keyboard
         // console.log(event.key)
         if (event.key === "Enter") {
@@ -239,7 +241,7 @@
           enterPressed();
           console.log('Enter pressed');
         }
-      }); 
+      });
 
       /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
       function menuFunc() {
@@ -249,13 +251,13 @@
         } else {
           x.style.display = "block";
         }
-      } 
+      }
 
-      
+
 
     </script>
   </div>
-  
+
 </body>
 
 </html>
