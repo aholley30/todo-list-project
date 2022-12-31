@@ -2,7 +2,7 @@ More things I should add:
 
 - streak tracking
 - a login so people can save their list
-- a database to save the login info
+- a database to save the login info and list
 - 3 bar drop down menu
 - sort of calendar that'll track daily progress
 - have the calendar also be able to show todos done that day
@@ -10,3 +10,17 @@ More things I should add:
 - allow preference for different task lengths for the random select
 - determine if the value attribute is needed for the checkbox items
 * hide streak on mobile
+
+- Add a separate javascript file.
+- Make the item tracking more efficient.
+- Save list history
+- right click to edit items
+
+What I want: 
+A todo list that'll be like a daily planner. 
+I can look at previous days accomplishments but I can't edit them.
+I can add, edit, and remove items at will.
+When I refresh the page, all changes persist.
+I have my own user account.
+The website fetches data from a database based on login info.
+
