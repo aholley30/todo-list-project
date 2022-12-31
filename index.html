@@ -36,7 +36,7 @@
             <nav class="dropdown-content">
               <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./2_picksomething.html">Decision Maker</a></li>
+                <li><a href="./2_decisionmaker.html">Decision Maker</a></li>
               </ul>
             </nav>
           </button>
@@ -46,7 +46,7 @@
           <!-- Navigation links (hidden by default) -->
           <nav id="myLinks">
             <a href="./index.html">Home</a>
-            <a href="./2_picksomething.html">Decision Maker</a>
+            <a href="./2_decisionmaker.html">Decision Maker</a>
           </nav>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
           <a href="javascript:void(0);" class="icon" onclick="menuFunc()">
@@ -60,17 +60,17 @@
     <div class="row">
       <div class="col-12 col-lg-12" id="title">
         <div>
-          <h2 class="title">4 out of 6 Items Remaining - Nice Job!</h2>
+          <h2 class="title" id="items_remaining">3 out of 6 Items Remaining - Nice Job!</h2>
         </div>
       </div>
     </div>
 
     <div class="row" id="centerme">
-      <div class="row todo_list" id="default_item">
+      <div class="row todo_list" id="default_item" onclick="updateCount()">
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label class="item_label">
-            <input type="checkbox" class="inline" />
+            <input type="checkbox" class="inline" checked/>
             <span class="strike">Track number of items remaining</span>
           </label>
         </div>
@@ -89,7 +89,7 @@
         </div>
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row todo_list">
+      <div class="row todo_list" onclick="updateCount()">
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v2" class="item_label">
@@ -110,7 +110,7 @@
         <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row todo_list">
+      <div class="row todo_list" onclick="updateCount()">
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v3" class="item_label">
@@ -131,7 +131,7 @@
         <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row todo_list">
+      <div class="row todo_list" onclick="updateCount()">
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v4" class="item_label">
@@ -152,7 +152,7 @@
         <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row todo_list">
+      <div class="row todo_list" onclick="updateCount()">
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v5" class="item_label">
@@ -173,7 +173,7 @@
         <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row todo_list">
+      <div class="row todo_list" onclick="updateCount()">
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-5" id="itemdiv">
           <label for="v6" class="item_label">
@@ -194,7 +194,7 @@
         <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row ta todo_list">
+      <div class="row ta todo_list" onclick="updateCount()">
         <div class="d-none d-sm-block col-1" id="lildiv"></div>
         <div class="d-large-block col-sm-10" id="itemdiv">
           <label for="v6" class="item_label"></label>
@@ -215,6 +215,19 @@
       </div>
     </div>
     <script>
+
+      function updateCount() {
+        var num_items = document.getElementsByClassName("todo_list").length - 1;
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var num_checked = 0;
+        for(var i=0; i<checkboxes.length; i++) {
+          if (checkboxes[i].checked) {
+            num_checked+=1;
+          }
+        }
+        var item = document.getElementById('items_remaining');
+        item.innerText = '' + num_items - num_checked + ' out of ' + num_items + ' remaining - Nice Job!'
+      }
 
       function enterPressed() {
         let p = document.getElementById("default_item"); //Gets the first todo item
