@@ -237,6 +237,7 @@
         j.querySelector('.strike').innerText = content; //Set the content of the todo otem
         j.querySelector('.right').innerText = ''; //Get rid of the streak text
         j.querySelector('.right').className = 'right'; //Get rid of fire icon
+        j.querySelector('.inline').checked = false; //uncheck item if checked
         document.getElementById('centerme').appendChild(j); //append whole node to the bottom of the list
         p = document.getElementsByClassName('ta')[0]; //Grab the list item asking for input
         document.getElementById('centerme').appendChild(p); //Move the input list item back to the
