@@ -1,17 +1,17 @@
 More things I should add:
 
 - streak tracking
+- be able to edit and remove todos
 - a login so people can save their list
 - a database to save the login info and list
-- 3 bar drop down menu
+* 3 bar drop down menu
 - sort of calendar that'll track daily progress
 - have the calendar also be able to show todos done that day
 - choice to randomly select what to do to work on
-- allow preference for different task lengths for the random select
 - determine if the value attribute is needed for the checkbox items
 * hide streak on mobile
 
-- Add a separate javascript file.
+* Add a separate javascript file.
 - Make the item tracking more efficient.
 - Save list history
 - right click to edit items
