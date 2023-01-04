@@ -28,7 +28,7 @@
     <div class="row">
       <div class="col-12 col-lg-12" id="header">
         <header class="header">
-          <h1>todo list</h1>
+          <h1>todo list: demo</h1>
         </header>
         <div class="dropdown">
           <button class="dropbtn">Menu
@@ -42,7 +42,7 @@
           </button>
         </div>
         <div class="topnav">
-          <header><a href="#home" class="active">ToDO List</a></header>
+          <header><a href="#home" class="active">ToDO List: demo</a></header>
           <!-- Navigation links (hidden by default) -->
           <nav id="myLinks">
             <a href="./index.html">Home</a>
@@ -60,151 +60,32 @@
     <div class="row">
       <div class="col-12 col-lg-12" id="title">
         <div>
-          <h2 class="title" id="items_remaining">3 out of 6 Items Remaining - Nice Job!</h2>
+          <h2 class="title" id="items_remaining">0 Items Remaining - Nice Job!</h2>
         </div>
       </div>
     </div>
 
     <div class="row" id="centerme">
-      <div class="row todo_list" id="default_item" onclick="updateCount()">
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-        <div class="d-large-block col-sm-5" id="itemdiv">
+      <div class="d-none row todo_list" id="default_item" onclick="updateCount()">
+        <div class="d-large-block col-sm-8" id="itemdiv">
           <label class="item_label">
-            <input type="checkbox" class="inline" checked/>
+            <input type="checkbox" class="inline"/>
             <span class="strike">Track number of items remaining</span>
           </label>
         </div>
-        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
-          <select name="time_req" class="form-select" placeholder="Length">
-            <optgroup label="Time Commitment">
-              <option value="" disabled selected></option>
-              <option value="1">Short</option>
-              <option value="2">Medium</option>
-              <option value="3">Long</option>
-            </optgroup>
-          </select>
-        </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv">
+        <div class="d-none d-sm-block col-sm-2" id="streakdiv">
           <span class="right fas fa-fire"> 6 day streak</span>
         </div>
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
-      <div class="row todo_list" onclick="updateCount()">
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-        <div class="d-large-block col-sm-5" id="itemdiv">
-          <label for="v2" class="item_label">
-            <input type="checkbox" id="v2" value="v2" class="inline" checked />
-            <span class="strike">Indent overflow text</span>
-          </label>
-        </div>
-        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
-          <select name="time_req" class="form-select" placeholder="Length">
-            <optgroup label="Time Commitment">
-              <option value="" disabled selected></option>
-              <option value="1">Short</option>
-              <option value="2">Medium</option>
-              <option value="3">Long</option>
-            </optgroup>
-          </select>
-        </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-      </div>
-      <div class="row todo_list" onclick="updateCount()">
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-        <div class="d-large-block col-sm-5" id="itemdiv">
-          <label for="v3" class="item_label">
-            <input type="checkbox" id="v3" value="v3" class="inline" />
-            <span class="strike">Update for, id, and value for newly added items</span>
-          </label>
-        </div>
-        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
-          <select name="time_req" class="form-select" placeholder="Length">
-            <optgroup label="Time Commitment">
-              <option value="" disabled selected></option>
-              <option value="1">Short</option>
-              <option value="2">Medium</option>
-              <option value="3">Long</option>
-            </optgroup>
-          </select>
-        </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-      </div>
-      <div class="row todo_list" onclick="updateCount()">
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-        <div class="d-large-block col-sm-5" id="itemdiv">
-          <label for="v4" class="item_label">
-            <input type="checkbox" id="v4" value="v4" class="inline" />
-            <span class="strike">Be able to edit todos</span>
-          </label>
-        </div>
-        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
-          <select name="time_req" class="form-select" placeholder="Length">
-            <optgroup label="Time Commitment">
-              <option value="" disabled selected></option>
-              <option value="1">Short</option>
-              <option value="2">Medium</option>
-              <option value="3">Long</option>
-            </optgroup>
-          </select>
-        </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-      </div>
-      <div class="row todo_list" onclick="updateCount()">
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-        <div class="d-large-block col-sm-5" id="itemdiv">
-          <label for="v5" class="item_label">
-            <input type="checkbox" id="v5" value="v5" class="inline" checked />
-            <span class="strike">Be able to add todos</span>
-          </label>
-        </div>
-        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
-          <select name="time_req" class="form-select" placeholder="Length">
-            <optgroup label="Time Commitment">
-              <option value="" disabled selected></option>
-              <option value="1">Short</option>
-              <option value="2">Medium</option>
-              <option value="3">Long</option>
-            </optgroup>
-          </select>
-        </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-      </div>
-      <div class="row todo_list" onclick="updateCount()">
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-        <div class="d-large-block col-sm-5" id="itemdiv">
-          <label for="v6" class="item_label">
-            <input type="checkbox" id="v6" value="v6" class="inline" />
-            <span class="strike">Be able to remove todos</span>
-          </label>
-        </div>
-        <div class="d-none d-sm-block col-sm-2" id="dropdiv">
-          <select name="time_req" class="form-select" placeholder="Length">
-            <optgroup label="Time Commitment">
-              <option value="" disabled selected></option>
-              <option value="1">Short</option>
-              <option value="2">Medium</option>
-              <option value="3">Long</option>
-            </optgroup>
-          </select>
-        </div>
-        <div class="d-none d-sm-block col-sm-3" id="streakdiv"><span class="right"> </span></div>
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
-      </div>
-      <div class="row ta todo_list" onclick="updateCount()">
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
+      
+      <div class="row ta todo_list">
         <div class="d-large-block col-sm-10" id="itemdiv">
           <label for="v6" class="item_label"></label>
-          <input type="checkbox" id="v6" value="v6" class="inline" />
+          <input type="checkbox" id="v6" value="v6" class="inline" disabled/>
           <textarea type="text" id="add_item" class="form-control-md" rows="1"
             placeholder="Add more items..."></textarea>
           </label>
         </div>
-
-        <div class="d-none d-sm-block col-1" id="lildiv"></div>
       </div>
     </div>
     <div class="row">
@@ -214,64 +95,8 @@
         </div>
       </div>
     </div>
-    <script>
-
-      function updateCount() {
-        var num_items = document.getElementsByClassName("todo_list").length - 1;
-        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-        var num_checked = 0;
-        for(var i=0; i<checkboxes.length; i++) {
-          if (checkboxes[i].checked) {
-            num_checked+=1;
-          }
-        }
-        var item = document.getElementById('items_remaining');
-        item.innerText = '' + num_items - num_checked + ' out of ' + num_items + ' remaining - Nice Job!'
-      }
-
-      function enterPressed() {
-        let p = document.getElementById("default_item"); //Gets the first todo item
-        let j = p.cloneNode(true); //makes a deep copy
-        const content = document.getElementById('add_item').value; //Grab the content entered into input field
-        document.getElementById('add_item').value = ''; //Clear input field
-        j.querySelector('.strike').innerText = content; //Set the content of the todo otem
-        j.querySelector('.right').innerText = ''; //Get rid of the streak text
-        j.querySelector('.right').className = 'right'; //Get rid of fire icon
-        j.querySelector('.inline').checked = false; //uncheck item if checked
-        document.getElementById('centerme').appendChild(j); //append whole node to the bottom of the list
-        p = document.getElementsByClassName('ta')[0]; //Grab the list item asking for input
-        document.getElementById('centerme').appendChild(p); //Move the input list item back to the
-      }
-
-      // Get the input field
-      var input = document.getElementById("add_item");
-
-      // Execute a function when the user presses a key on the keyboard
-      input.addEventListener("keypress", function (event) {
-        // If the user presses the "Enter" key on the keyboard
-        // console.log(event.key)
-        if (event.key === "Enter") {
-          event.preventDefault();
-          enterPressed();
-          console.log('Enter pressed');
-        }
-      });
-
-      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-      function menuFunc() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-
-
-
-    </script>
+    <script src="script.js"></script>
   </div>
-
 </body>
 
 </html>
