@@ -79,6 +79,9 @@ label input:checked~.strike{
   font-size: x-large;
   font-weight: bold;
   margin: auto;
+  border: 0.15em solid #0a0a23;
+  border-radius: 0.5em;
+  background-color: #0a0a23;
 }
 
 #centerme .row {
@@ -93,38 +96,12 @@ label input:checked~.strike{
 }
 
 @media (min-width: 576px) {
-  .todo_list:first-child #itemdiv {
-    border: 0.15em solid #0a0a23;
-    border-top-left-radius: 0.5em;
-  }
-  .todo_list:last-child #itemdiv {
-    border: 0.15em solid #0a0a23;
-    border-bottom-left-radius: 0.5em;
-  }
-  .todo_list:first-child #streakdiv {
-    border: 0.15em solid #0a0a23;
-    border-top-right-radius: 0.5em;
-  }
-  .todo_list:last-child #itemdiv {
-    border: 0.15em solid #0a0a23;
-    border-bottom-right-radius: 0.5em;
-  }
   .topnav {
     display: none;
   }
 }
 
 @media (max-width: 576px) {
-  .todo_list:first-child #itemdiv {
-    border: 0.15em solid #0a0a23;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-  }
-  .todo_list:last-child #itemdiv {
-    border: 0.15em solid #0a0a23;
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-  }
   #centerme {
     margin: auto;
   }
