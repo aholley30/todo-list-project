@@ -58,3 +58,14 @@ function menuFunc() {
   }
 }
 
+const alert = document.querySelector(".alert");
+const dismissAlertButton = document.querySelector(".alert button");
+ 	
+
+if (dismissAlertButton) {
+  dismissAlertButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert.classList.add("alert-hidden");
+    alert.classList.add("d-none");
+  })
+}
