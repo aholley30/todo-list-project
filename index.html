@@ -16,6 +16,7 @@
   <title>Productivity Tracker</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./basic.css">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -36,6 +37,7 @@
               <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./2_decisionmaker.html">Decision Maker</a></li>
+                <li><a href="./login.html">Sign In / Sign Up</a></li>
               </ul>
             </nav>
           </button>
@@ -46,6 +48,7 @@
           <nav id="myLinks">
             <a href="./index.html">Home</a>
             <a href="./2_decisionmaker.html">Decision Maker</a>
+            <a href="./login.html">Sign In / Sign Up</a>
           </nav>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
           <a href="javascript:void(0);" class="icon" onclick="menuFunc()">
@@ -61,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div class="row" id="centerme">
+    <div class="row" id="content">
       <div class="d-none row todo_list" id="default_item" onclick="updateCount()">
         <div class="d-large-block col-sm-8" id="itemdiv">
           <label class="item_label">
