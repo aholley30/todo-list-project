@@ -16,6 +16,7 @@
   <title>Productivity Tracker</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./basic.css">
   <link rel="stylesheet" href="./styles2.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -26,7 +27,7 @@
 <body>
 
   <div class="container-fluid">
-    <div class="row header">
+    <div class="row" id="header">
       <div class="col-12 col-lg-12 firstheader">
         <header>
           <h1>Too Many Choices?</h1>
@@ -39,6 +40,7 @@
             <ul>
               <li><a href="./index.html">Home</a></li>
               <li><a href="./2_decisionmaker.html">Decision Maker</a></li>
+              <li><a href="./login.html">Sign In / Sign Up</a></li>
             </ul>
           </nav>
         </button>
@@ -49,6 +51,7 @@
         <nav id="myLinks">
           <a href="./index.html">Home</a>
           <a href="./2_decisionmaker.html">Decision Maker</a>
+          <a href="./login.html">Sign In / Sign Up</a>
         </nav>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="menuFunc()">
@@ -67,7 +70,8 @@
       <div class="col-12 col-lg-12 num_runs text-center">
         <label id="num_runs" for="num_times">Number of Runs:
         </label>
-        <input id="num_times" type="number" min="1" max="5000" value="1">
+        <input id="num_times" type="range" min="1" max="1000" step="1" oninput="this.nextElementSibling.value=this.value">
+        <output>501</output>
       </div>
       <div class="col-12 col-lg-12 sub text-center">
         <button class="btn btn-dark submit" onclick="itemPicker()">Submit</button>
@@ -114,7 +118,7 @@
 
       for (let i = 0; i < items.length; i++) {
         newEl = document.createElement('p');
-        newEl.innerText = items[i][0] + ': ' + ((items[i][1] / num_runs) * 100).toFixed(2) + '%';
+        newEl.innerText = items[i][0] + ': ' + items[i][1];
         results.appendChild(newEl);
       }
     }
