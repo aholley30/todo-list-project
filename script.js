@@ -14,7 +14,7 @@ function updateCount() {
     item.innerText = '0 items remaining - Nice Job!';
     return;
   } 
-  item.innerText = '' + num_items - num_checked + ' out of ' + num_items + ' remaining - Nice Job!'
+  item.innerText = '' + num_items - num_checked + ' out of ' + num_items + ' remaining'
 }
 
 function enterPressed() {
