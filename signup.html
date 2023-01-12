@@ -61,7 +61,7 @@
     <div class="row" id="content">
       <main>
         <h1 class="title">Sign Up or <a href="./login.html">Sign In</a></h1>
-        <form>
+        <form method="post">
           <div class="item">
             <label for="username">Username:
               <input type="text" id="username" name="username" required>
@@ -96,5 +96,16 @@
       </div>
     </div>
 </body>
+<script>
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function menuFunc() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
 
 </html>
