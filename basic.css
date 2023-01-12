@@ -17,9 +17,10 @@ body,
   color: white;
   text-align: center;
   text-transform: uppercase;
+  font-size: medium;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  font-family: 'Bradley Hand', 'Brush Script MT', cursive, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: 'Roboto', 'Times', cursive, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   border: 0.15em solid #0a0a23;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
@@ -47,6 +48,10 @@ body,
 
 @media (max-width: 576px) {
 
+  header {
+    font-size: x-large;
+  }
+
   /* Change color of dropdown links on hover */
   .dropdown {
     display: none
@@ -68,7 +73,7 @@ body,
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    /* font-size: 17px; */
     display: block;
   }
 
@@ -122,7 +127,7 @@ body,
   background-color: #f1f1f1;
   width: 160px;
   z-index: 1;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   transform: translateX(-3em);
   
 }
